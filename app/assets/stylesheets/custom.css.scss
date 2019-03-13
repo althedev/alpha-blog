@@ -1,4 +1,4 @@
-$navbar-default-bg: black;
+$navbar-default-bg: white;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -8,14 +8,14 @@ $navbar-default-bg: black;
 #logo {
   float: left;
   font-size: 2.5em;
-  color: #fff;
-  text-transform: uppercase;
+  color: #6b4108;
+  text-transform: none;
   letter-spacing: -1px;
   font-weight: bold;
 }
 
 #logo:hover {
-  color: #fff;
+  color: #d10c0c;
   text-decoration: none;
 }
 
@@ -24,9 +24,14 @@ $navbar-default-bg: black;
 }
 
 .jumbotron {
-  background-image: asset-url('deneme.jpg');
-  background-size: cover;
-  height: 1800px;
+  background-image: asset-url('lotr-main.jpg');
+  background-size: 100% 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(Celtic-braided-border.jpeg) 30 round;
+  border-image-slice: 7%;
 }
 
 .jumbotron h1 {
@@ -95,4 +100,10 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+.borderimg1 {
+  border: 10px solid transparent;
+  padding: 10px;
+  border-image: url(border-image-lines) 30 round;
 }

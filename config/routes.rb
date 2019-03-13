@@ -10,5 +10,15 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+mount Rails::Pretty::Logger::Engine => "/rails-pretty-logger"
+Rails::Pretty::Logger::Engine.routes.draw do
+
+resources :dashboards, only: [:index] do
+  get :logs, on: :collection
+  post :logs, on: :collection
+  post :clear_logs, on: :collection
 end
+end
+
+end
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
