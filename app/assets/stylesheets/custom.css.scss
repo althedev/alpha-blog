@@ -30,8 +30,7 @@ $navbar-default-bg: white;
   background-repeat: no-repeat;
   border: 10px solid transparent;
   padding: 15px;
-  border-image: url(Celtic-braided-border.jpeg) 30 round;
-  border-image-slice: 7%;
+
 }
 
 .jumbotron h1 {
@@ -100,10 +99,4 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
-}
-
-.borderimg1 {
-  border: 10px solid transparent;
-  padding: 10px;
-  border-image: url(border-image-lines) 30 round;
 }
